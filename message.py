@@ -20,7 +20,7 @@ def date2file():
     elif (h == 9):
         t = 'd'
     else:
-        t = 'd'
+        break
     f = str(d) + '-' + t
     return f
 
