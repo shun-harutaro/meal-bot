@@ -19,8 +19,6 @@ def date2file():
         t = 'l'
     elif (h == 9):
         t = 'd'
-    else:
-        break
     f = str(d) + '-' + t
     return f
 
