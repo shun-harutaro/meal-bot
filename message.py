@@ -7,7 +7,10 @@ USER_ID = setting.USER_ID
 line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
 
 def push():
-    message = TextSendMessage(text="てすと")
-    linebot.push_message(USER_ID, message=messages)
+    f = open('', 'r')
+    content = f.read()
+    f.close()
+    messages = TextSendMessage(text=content)
+    line_bot_api.push_message(USER_ID, messages)
 
 push()
